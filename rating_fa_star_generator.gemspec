@@ -9,16 +9,15 @@ Gem::Specification.new do |spec|
   spec.platform = Gem::Platform::RUBY
   spec.authors = ["Sergey Pedan"]
   spec.email = ["sergey.pedan@gmail.com"]
-  spec.homepage = ""
-  spec.summary = ""
+  spec.homepage = "https://github.com/sergeypedan/rating_fa_star_generator"
+  spec.summary = "Generates rating stars compatible with FontAwesome v.4"
   spec.license = "MIT"
 
   spec.metadata = {
-    "source_code_uri" => "",
-    "changelog_uri" => "/blob/master/CHANGES.md",
-    "bug_tracker_uri" => "/issues"
+    "source_code_uri" => "https://github.com/sergeypedan/rating_fa_star_generator",
+    "changelog_uri"   => "https://github.com/sergeypedan/rating_fa_star_generator/blob/master/CHANGES.md",
+    "bug_tracker_uri" => "https://github.com/sergeypedan/rating_fa_star_generator/issues"
   }
-
 
   spec.required_ruby_version = "~> 2.5"
   spec.add_development_dependency "bundler-audit", "~> 0.6"

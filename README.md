@@ -23,7 +23,7 @@
 
 ## Features
 
-## Screencasts
+Generates rating stars compatible with FontAwesome v.4
 
 ## Requirements
 
@@ -31,50 +31,46 @@
 
 ## Setup
 
-To install, run:
-
-    gem install rating_fa_star_generator
-
 Add the following to your Gemfile:
 
-    gem "rating_fa_star_generator"
+```ruby
+gem "rating_fa_star_generator"
+```
 
 ## Usage
+
+Core usage:
+
+```ruby
+RatingFaStarsGenerator.new(mark).html
+```
+
+It will be convenient to wrap it in a view helper:
+
+```ruby
+# app/helpers/rating_helper.rb
+require "rating_fa_stars_generator"
+
+module RatingHelper
+  def rating_stars_html(mark)
+    RatingFaStarsGenerator.new(mark).html
+  end
+end
+```
+
+```ruby
+# app/views/restaurants/show.html.erb
+<%= rating_stars_html(@restaurant.rating) %>
+```
 
 ## Tests
 
 To test, run:
 
-    bundle exec rake
-
-## Versioning
-
-Read [Semantic Versioning](https://semver.org) for details. Briefly, it means:
-
-- Major (X.y.z) - Incremented for any backwards incompatible public API changes.
-- Minor (x.Y.z) - Incremented for new, backwards compatible, public API enhancements/fixes.
-- Patch (x.y.Z) - Incremented for small, backwards compatible, bug fixes.
-
-## Code of Conduct
-
-Please note that this project is released with a [CODE OF CONDUCT](CODE_OF_CONDUCT.md). By
-participating in this project you agree to abide by its terms.
-
-## Contributions
-
-Read [CONTRIBUTING](CONTRIBUTING.md) for details.
-
-## License
-
-Copyright 2018 [Integral Design](http://integral-design.ru).
-Read [LICENSE](LICENSE.md) for details.
-
-## History
-
-Read [CHANGES](CHANGES.md) for details.
-Built with [Gemsmith](https://github.com/bkuhlmann/gemsmith).
+```sh
+bundle exec rake
+```
 
 ## Credits
 
-Developed by [Sergey Pedan]() at
-[Integral Design](http://integral-design.ru).
+Developed by [Sergey Pedan](http://sergeypedan.ru) at [Integral Design](http://integral-design.ru).

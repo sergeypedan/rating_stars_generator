@@ -1,6 +1,16 @@
 detectors:
+  BooleanParameter:
+    enabled: false
+
   IrresponsibleModule:
     enabled: false
+
+  TooManyStatements:
+    enabled: true
+    exclude:
+    - initialize
+    max_statements: 7
+
 exclude_paths:
   - tmp
   - vendor
