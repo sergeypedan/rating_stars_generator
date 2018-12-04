@@ -7,16 +7,10 @@
 ## Table of Contents
 
   - [Features](#features)
-  - [Screencasts](#screencasts)
   - [Requirements](#requirements)
   - [Setup](#setup)
   - [Usage](#usage)
   - [Tests](#tests)
-  - [Versioning](#versioning)
-  - [Code of Conduct](#code-of-conduct)
-  - [Contributions](#contributions)
-  - [License](#license)
-  - [History](#history)
   - [Credits](#credits)
 
 <!-- Tocer[finish]: Auto-generated, don't remove. -->
