@@ -1,6 +1,8 @@
 # Rating stars generator
 
 [![Gem Version](https://badge.fury.io/rb/rating_stars_generator.svg)](http://badge.fury.io/rb/rating_stars_generator)
+[![Maintainability](https://api.codeclimate.com/v1/badges/f5a42276aa034ee10945/maintainability)](https://codeclimate.com/github/sergeypedan/rating_stars_generator/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/f5a42276aa034ee10945/test_coverage)](https://codeclimate.com/github/sergeypedan/rating_stars_generator/test_coverage)
 
 <!-- Tocer[start]: Auto-generated, don't remove. -->
 
