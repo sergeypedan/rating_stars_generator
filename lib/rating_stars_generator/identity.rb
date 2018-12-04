@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module RatingStarsGenerator
+class RatingStarsGenerator
   # Gem identity information.
   module Identity
     def self.name

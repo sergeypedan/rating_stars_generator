@@ -6,7 +6,10 @@ module Helpers
 
   def mark_valid?(mark)
     return false unless mark
+    return false if mark == ""
+    return true  if mark.to_i > 0
     fail ArgumentError, "rating mark must be a Numeric, received #{mark.inspect}" unless mark.is_a? Numeric
+    fail ArgumentError, "rating mark must be >= 0, received #{mark}" if mark.to_i.negative?
     return false if mark.zero?
     true
   end
