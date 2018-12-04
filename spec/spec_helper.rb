@@ -3,7 +3,7 @@
 require "bundler/setup"
 require "pry"
 require "pry-byebug"
-require "rating_fa_star_generator"
+require "rating_stars_generator"
 
 Dir[File.join(File.dirname(__FILE__), "support/shared_contexts/**/*.rb")].each do |file|
   require file

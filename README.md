@@ -1,6 +1,6 @@
-# Rating Fa Star Generator
+# Rating stars generator
 
-[![Gem Version](https://badge.fury.io/rb/rating_fa_star_generator.svg)](http://badge.fury.io/rb/rating_fa_star_generator)
+[![Gem Version](https://badge.fury.io/rb/rating_stars_generator.svg)](http://badge.fury.io/rb/rating_stars_generator)
 
 <!-- Tocer[start]: Auto-generated, don't remove. -->
 
@@ -34,7 +34,7 @@ Generates rating stars compatible with FontAwesome v.4
 Add the following to your Gemfile:
 
 ```ruby
-gem "rating_fa_star_generator"
+gem "rating_stars_generator"
 ```
 
 ## Usage
@@ -42,18 +42,18 @@ gem "rating_fa_star_generator"
 Core usage:
 
 ```ruby
-RatingFaStarsGenerator.new(mark).html
+RatingStarssGenerator.new(mark).html
 ```
 
 It will be convenient to wrap it in a view helper:
 
 ```ruby
 # app/helpers/rating_helper.rb
-require "rating_fa_stars_generator"
+require "rating_starss_generator"
 
 module RatingHelper
   def rating_stars_html(mark)
-    RatingFaStarsGenerator.new(mark).html
+    RatingStarssGenerator.new(mark).html
   end
 end
 ```

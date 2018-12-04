@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-require "rating_fa_star_generator/identity"
+require "rating_stars_generator/identity"
 
-class RatingFaStarsGenerator < ActionView::Base
+class RatingStarsGenerator < ActionView::Base
 
   include FontAwesome::Rails::IconHelper
 

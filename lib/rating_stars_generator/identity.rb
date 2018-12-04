@@ -1,14 +1,14 @@
 # frozen_string_literal: true
 
-module RatingFaStarGenerator
+module RatingStarsGenerator
   # Gem identity information.
   module Identity
     def self.name
-      "rating_fa_star_generator"
+      "rating_stars_generator"
     end
 
     def self.label
-      "Rating Fa Star Generator"
+      "Rating stars generator"
     end
 
     def self.version

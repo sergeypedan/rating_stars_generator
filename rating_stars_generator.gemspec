@@ -1,22 +1,22 @@
 # frozen_string_literal: true
 
 $LOAD_PATH.append File.expand_path("lib", __dir__)
-require "rating_fa_star_generator/identity"
+require "rating_stars_generator/identity"
 
 Gem::Specification.new do |spec|
-  spec.name = RatingFaStarGenerator::Identity.name
-  spec.version = RatingFaStarGenerator::Identity.version
+  spec.name = RatingStarsGenerator::Identity.name
+  spec.version = RatingStarsGenerator::Identity.version
   spec.platform = Gem::Platform::RUBY
   spec.authors = ["Sergey Pedan"]
   spec.email = ["sergey.pedan@gmail.com"]
-  spec.homepage = "https://github.com/sergeypedan/rating_fa_star_generator"
+  spec.homepage = "https://github.com/sergeypedan/rating_stars_generator"
   spec.summary = "Generates rating stars compatible with FontAwesome v.4"
   spec.license = "MIT"
 
   spec.metadata = {
-    "source_code_uri" => "https://github.com/sergeypedan/rating_fa_star_generator",
-    "changelog_uri"   => "https://github.com/sergeypedan/rating_fa_star_generator/blob/master/CHANGES.md",
-    "bug_tracker_uri" => "https://github.com/sergeypedan/rating_fa_star_generator/issues"
+    "source_code_uri" => "https://github.com/sergeypedan/rating_stars_generator",
+    "changelog_uri"   => "https://github.com/sergeypedan/rating_stars_generator/blob/master/CHANGES.md",
+    "bug_tracker_uri" => "https://github.com/sergeypedan/rating_stars_generator/issues"
   }
 
   spec.required_ruby_version = "~> 2.5"
