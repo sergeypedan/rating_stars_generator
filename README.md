@@ -33,13 +33,35 @@ Add the following to your Gemfile:
 gem "rating_stars_generator"
 ```
 
+(this will also install "[font-awesome-rails](https://github.com/bokmann/font-awesome-rails)", "~> 4.7" gem)
+
+Import Font-Awesome to your CSS, for example `application.sass`
+
+```sass
+@import "font-awesome"
+```
+
 ## Usage
 
-Core usage:
+### Core usage
 
 ```ruby
-RatingStarssGenerator.new(mark).html
+RatingStarsGenerator.new(3.5).html
 ```
+
+which would produce
+
+```html
+<div class="rating-stars" data-rating="4.8">
+	<i class="fa fa-star"></i>
+	<i class="fa fa-star"></i>
+	<i class="fa fa-star"></i>
+	<i class="fa fa-star-half-o"></i>
+	<i class="fa fa-star-o"></i>
+</div>
+```
+
+### Via helper
 
 It will be convenient to wrap it in a view helper:
 
@@ -49,7 +71,7 @@ require "rating_starss_generator"
 
 module RatingHelper
   def rating_stars_html(mark)
-    RatingStarssGenerator.new(mark).html
+    RatingStarsGenerator.new(mark).html
   end
 end
 ```
